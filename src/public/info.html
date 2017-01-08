@@ -1,0 +1,40 @@
+<div class="container">
+    <h1>User's info</h1>
+
+            <span ng-show = "showMsg">Not Signed Up Yet. <a ui-sref="public.signup">Sign up Now!</a></span>    
+
+            <div ng-hide = "showMsg">
+                <div class="row">
+                    <label class="control-label col-sm-4"> Your First Name:</label>
+                    <div class="col-sm-8">
+                        <p>{{user.firstName}}</p>
+                    </div>
+            </div>
+            
+            <div class="row">
+                    <label class="control-label col-sm-4" > Your Last Name:</label>
+                    <div class="col-sm-8">
+                        <p> {{user.lastName}} </p>
+                    </div>
+            </div>  
+            
+            <div class="row">
+                    <label class="control-label col-sm-4"> Your email address:</label>
+                    <div class="col-sm-8">
+                        <p> {{user.email}} </p>
+                        
+                    </div>
+            </div>
+
+            <div class="row">
+                    <label class="control-label col-sm-4"> Your Phone number:</label>
+                    <div class="col-sm-8">
+                        <p> {{user.phone}} </p>
+                    </div>
+            </div>     
+
+            <div class="row">
+                <menu-item menu-item="menuItem"></menu-item>
+            </div>
+        </div> <!--end ng-hide-->
+</div>
